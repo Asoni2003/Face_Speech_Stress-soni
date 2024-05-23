@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<!-----------header--------->
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>REVIVE Rehabilitation Centre </title>
+        <link rel="shortcut icon" type="image/png" href="static/favicon.png">
+        <link rel="stylesheet" href="static/css/style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+              integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600&display=swap">
+        <script src="https://kit.fontawesome.com/3cb81d5d8f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href=homepage><img src="static/logo.jpeg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=homepage>HOME</a></li>
+                        <li><a href=programs>PROGRAMS</a></li>
+                        <li><a href=care>CARE</a></li>
+                        <li><a href=reviews>REVIEWS</a></li>
+                        <li><a href=contact>CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+
+        <!-----------testimonials----------->
+        <section class="reviews">
+            <h1>Patient Feedback:</h1>
+            <h2>A few honest reviews from our beloved patients <3</h2>
+
+            <div class="row">
+                <div class="reviews-col">
+                    <a href=""><img src="static/p1.jpeg"></a>
+                    <div>
+                        <p> Alright, so I have been to a lot of so-called luxury rehabs before for my battle with alcoholism but if I had to speak
+                            from my heart, I can honestly say that these people understood my problem better. For starters, they never lectured
+                            me on my addiction nor were they condescending, really appreciated that part. This is my biggest reason for
+                            liking REVIVE. They understand everyone is different and need a different approach. I have already recommended
+                            REVIVE to my friends back in UK. So, all I want to say is this - Thank you so much. I will keep coming for my follow-ups.</p>
+                        <h3>Mr. Brian Matthews</h3>
+                    </div>
+                </div>
+                <div class="reviews-col">
+                    <a href=""><img src="static/p2.jpeg"></a>
+                    <div>
+                        <p> A green haven in the heart of Hyderabad with no sound of traffic, well-appointed villas with high ceilings,
+                            excellent and roomy bathrooms and unobstructed, clear and large windows. Tall Indian cottonwood trees and silver
+                            oaks manning the borders prone to be a birder's paradise. All in all, it was an experience that I can confirm with
+                            utmost certainty, REVIVE is proving (and would continue to prove) to be life changing for me personally as well as for
+                            my loved ones. And the greatest benefit of it all was getting to regain control over my life with full reinstatement of
+                            confidence and optimism. Winning a few friends along the way has been an added bonus! All the best!</p>
+                        <h3>Mr. Kamal Reddy</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        </section>
+
+
+
+        <!-----------JavaScript for Toggle Menu------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+
+
+    <!-----------footer----------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            At REVIVE, we recognize that each individual has a unique set of circumstances and a unique set of goals.<br>Hence,
+            we accommodate limited clients at one time in order to design and execute customized treatment plans for each individual.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Suhali Kondapalli</p>
+    </section>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<!-----------header--------->
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>REVIVE Rehabilitation Centre </title>
+        <link rel="shortcut icon" type="image/png" href="static/favicon.png">
+        <link rel="stylesheet" href="static/css/style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+              integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600&display=swap">
+        <script src="https://kit.fontawesome.com/3cb81d5d8f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href=homepage><img src="static/logo.jpeg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=homepage>HOME</a></li>
+                        <li><a href=programs>PROGRAMS</a></li>
+                        <li><a href=care>CARE</a></li>
+                        <li><a href=reviews>REVIEWS</a></li>
+                        <li><a href=contact>CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+
+        <!-----------Programs Offered----------->
+        <section class="programs">
+            <h1>Programs Offered By Us:</h1>
+            <p>Upon contacting Sanctum as your potential treatment provider, you can expect an invitation to receive a tour
+                and consultation with the professional experts. Our psychiatrists specialize in working therapeutically with
+                individuals that are suffering from depression,<br> anxiety and much more.</p>
+
+            <div class="rowprog">
+                <div class="programs-col">
+                    <h3>Drug Rehab Program for CEOs</h3>
+                    <p>REVIVE provides a highly regarded Executive Rehab program for Business Professionals/CEOs/Executives.
+                        Many of the individuals treated by our professional team, have spent their lives developing their careers,
+                        working extremely hard and undergoing an inconceivable amount of stress in their professional journey.</p>
+                </div>
+                <div class="programs-col">
+                    <h3>Adolescent Addiction Treatment</h3>
+                    <p>REVIVE provides personalized residential treatment for teens/adolescent population for their specific
+                        requirements such as substance addiction, gaming addiction, depression etc.
+                        Our experts help guide and support parents who are worried along
+                        with establishing a therapeutic alliance easily with adolescents.</p>
+                </div>
+                <div class="programs-col">
+                    <h3>Game Addiction Treatment</h3>
+                    <p>The computer and console gaming industry is growing with its biggest forms being Massive Multiplayer
+                        Online Role Playing Games (MMORPG). These enable the player to fully immerse themselves in a fake world
+                        where they achieve a multitude of tasks. REVIVE helps such individuals to stay away and not be adversely affected. </p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        </section>
+
+
+
+        <!-----------JavaScript for Toggle Menu------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+
+
+    <!-----------footer----------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            At REVIVE, we recognize that each individual has a unique set of circumstances and a unique set of goals.<br>Hence,
+            we accommodate limited clients at one time in order to design and execute customized treatment plans for each individual.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Suhali Kondapalli</p>
+    </section>
+</html>

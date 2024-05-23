@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<!-----------header--------->
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Stress Detection using Speech and Face</title>
+        <link rel="shortcut icon" type="image/png" href="static/favicon.png">
+        <link rel="stylesheet" href="static/css/style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+              integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600&display=swap">
+        <script src="https://kit.fontawesome.com/3cb81d5d8f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href=homepage><img src="static/logo.jpeg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=homepage>HOME</a></li>
+                        
+                        <li><a href="{{ url_for('index')}}">Accuracy Graph</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        <div class="text-box">
+            <h1>Project on</h1>
+            <h2>Stress Detection using Speech and Face</h2>
+            <p>FINAL YEAR RESEARCH PROJECT</p>
+            <a href=login class="btn">Enquire the status of an inmate</a>
+
+        </div>
+        </section>
+
+        <!-----------intro----------->
+        <section class="Intro">
+            <div class="intro-img">
+                <a href=""><img src="static/intro.jpeg"></a>
+            </div>
+            <div class="intro-div">
+                <h2>INDIA'S PREMIER LUXURY DE-ADDICTION AND PSYCHOLOGICAL HEALTH CENTER RUN BY INTERNATIONALLY TRAINED PROFESSIONAL DOCTORS AVAILABLE ROUND THE CLOCK.</h2>
+                <p>This Project is one of Accurate method to check the Stress of the Person using Voice and Face.
+                    innovative and state-of-the-art programs individualized for every person approaching<br> us. We're strongly committed to maintaining the best rehabilitation
+                    center standards to help every person with any dependence (for any substance such as alcohol addiction, opioid addiction, all types of drug addiction / process
+                    limited addiction such as gambling addiction, gaming addiction, food addiction).<br> We also help relieve psychological health concerns (such as anxiety symptoms,
+                    depression, personality disorders such as borderline personality disorder, eating disorders such as anorexia nervosa / bulimia / obesity, post traumatic
+                    stress disorder, obsessive compulsive disorder).</p>
+            </div>
+        </section>
+
+
+        <!-----------JavaScript for Toggle Menu------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+
+
+    <!-----------footer----------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            At this Project, we recognize that each individual has a unique set of circumstances and a unique set of goals.<br>Hence,
+                    </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Ieee Xpert</p>
+    </section>
+</html>
+
